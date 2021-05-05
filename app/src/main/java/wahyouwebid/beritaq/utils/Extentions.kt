@@ -12,11 +12,6 @@ import org.json.JSONObject
  * Portopolio : wahyou.web.id.
  */
 object Extentions {
-    fun JSONArray.foreach(callback: (data: JSONObject) -> Unit) {
-        for(position in 0 until this.length()){
-            callback.invoke(this.getJSONObject(position))
-        }
-    }
 
     fun Context.loadJSONFromAssets(fileName: String): String {
         return applicationContext.assets.open(fileName).bufferedReader().use { reader ->
