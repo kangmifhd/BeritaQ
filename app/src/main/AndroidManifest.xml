@@ -14,13 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeritaQ"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ui.main.MainActivity"></activity>
         <activity
             android:name=".ui.search.SearchActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ui.source.SourceActivity" />
         <activity android:name=".ui.detail.DetailActivity" />
         <activity android:name=".ui.news.NewsActivity" />
-        <activity android:name=".ui.main.MainActivity">
+        <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

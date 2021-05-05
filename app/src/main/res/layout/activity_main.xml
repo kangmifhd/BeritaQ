@@ -26,6 +26,7 @@
                 android:fontFamily="@font/ff_cocon"
                 android:gravity="center"
                 android:textSize="@dimen/font_20"
+                android:textColor="@color/colorPrimary"
                 app:layout_constraintTop_toTopOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.MaterialToolbar>

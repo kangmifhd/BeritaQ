@@ -7,10 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import wahyouwebid.beritaq.R
 import wahyouwebid.beritaq.data.model.news.DataNews
-import wahyouwebid.beritaq.data.model.source.DataSource
 import wahyouwebid.beritaq.databinding.AdapterHeadlineBinding
-import wahyouwebid.beritaq.databinding.AdapterNewsBinding
-import wahyouwebid.beritaq.databinding.AdapterSourceBinding
 import wahyouwebid.beritaq.utils.Utils
 
 class HeadlinesAdapter (

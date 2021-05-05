@@ -5,8 +5,6 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import com.google.gson.GsonBuilder
-import com.google.gson.reflect.TypeToken
 import io.reactivex.disposables.CompositeDisposable
 import org.json.JSONArray
 import wahyouwebid.beritaq.data.factory.Factory
