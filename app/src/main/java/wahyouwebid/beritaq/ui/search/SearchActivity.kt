@@ -57,7 +57,7 @@ class SearchActivity : AppCompatActivity() {
                     setupLoading(true)
                 }
                 is NewsState.Result -> {
-                    successGetData(it.data.data)
+                    setupLoading(false)
                 }
                 is NewsState.Error -> {
                     setupError(it)
@@ -84,28 +84,13 @@ class SearchActivity : AppCompatActivity() {
         }
     }
 
-    private fun successGetData(data : List<DataNews>){
-        with(binding){
-            setupLoading(false)
-            if(data.isEmpty()) {
-                emptyLottie.visibility = View.VISIBLE
-            } else {
-                emptyLottie.visibility = View.GONE
-            }
-        }
-    }
-
-
     private fun setupError(error : NewsState.Error){
-        with(binding){
-            setupLoading(false)
-            if (error.error.message != null) Toast.makeText(
-                    applicationContext,
-                    error.error.message!!,
-                    Toast.LENGTH_SHORT
-            ).show()
-            emptyLottie.visibility = View.VISIBLE
-        }
+        setupLoading(false)
+        if (error.error.message != null) Toast.makeText(
+            applicationContext,
+            error.error.message!!,
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
     private fun detailNews(item: DataNews) {
